@@ -1,15 +1,20 @@
 #include<iostream>
 #include<vector>
-#include<algorithm>
+// #include<algorithm>
 
 using namespace std;
 
 void bubbleSort(vector<int> &q){
     for (int i=0;i< q.size();i++){
-        for (int j=0;j<q.size()-i;j++){
-            if (q[j]>q[j+1]){
-                swap(q[j], q[j+1]);
+        bool flag =  false;
+        for (int j=1;j<q.size()-i;j++){
+            if (q[j] < q[j-1]){
+                swap(q[j], q[j-1]);
+                flag = true;
             }
+        }
+        if(!flag){
+            break;
         }
     }
 }
@@ -22,6 +27,9 @@ int main(){
         cin >> t;
         q.push_back(t);
     }
+    for(auto x : q)
+        cout << x << ' ';
+    cout << endl;
     bubbleSort(q);
     for(auto x : q)
         cout << x << ' ';

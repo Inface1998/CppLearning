@@ -14,7 +14,7 @@ int main()
 
     // using the cout.put() member function to display a char
     cout << "Displaying char ch using cout.put(ch): ";
-    cout.put(1e9);
+    cout.put(ch);
 
     // using cout.put() to display a char constant
     cout.put('!');

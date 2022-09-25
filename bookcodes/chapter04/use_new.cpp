@@ -13,16 +13,15 @@ int main()
     cout << "value = " << *pt << ": location = " << pt << endl;
 
     double * pd = new double;   // allocate space for a double
-    cout << "location of pointer pd: " << &pd << endl;
-    // *pd = 10000001.0;           // store a double there
+    *pd = 10000001.0;           // store a double there
 
     cout << "double ";
     cout << "value = " << *pd << ": location = " << pd << endl;
     cout << "location of pointer pd: " << &pd << endl;
-    // cout << "size of pt = " << sizeof(pt);
-    // cout << ": size of *pt = " << sizeof(*pt) << endl;
-    // cout << "size of pd = " << sizeof pd;
-    // cout << ": size of *pd = " << sizeof(*pd) << endl;
+    cout << "size of pt = " << sizeof(pt);
+    cout << ": size of *pt = " << sizeof(*pt) << endl;
+    cout << "size of pd = " << sizeof pd;
+    cout << ": size of *pd = " << sizeof(*pd) << endl;
     // cin.get();
     return 0;
 }

@@ -17,5 +17,5 @@ int main()
 
 int stonetolb(int sts)
 {
-     return (14 * sts);
+     return 14 * sts;
 }
