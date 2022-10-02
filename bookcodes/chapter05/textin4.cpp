@@ -3,9 +3,8 @@
 int main(void)
 {
     using namespace std;
-    int ch;                         // should be int, not char
+    int ch;                       // should be int, not char
     int count = 0;
-
     while ((ch = cin.get()) != EOF) // test for end-of-file
     {
         cout.put(char(ch));
